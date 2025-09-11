@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Svara_website/static/css/main.cae104a6.css",
+    "main.js": "/Svara_website/static/js/main.60131c43.js",
+    "index.html": "/Svara_website/index.html",
+    "main.cae104a6.css.map": "/Svara_website/static/css/main.cae104a6.css.map",
+    "main.60131c43.js.map": "/Svara_website/static/js/main.60131c43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cae104a6.css",
+    "static/js/main.60131c43.js"
+  ]
+}
