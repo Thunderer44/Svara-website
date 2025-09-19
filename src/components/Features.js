@@ -88,7 +88,7 @@ const Features = () => {
           
           <div className="glass-effect p-8 rounded-2xl max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold text-white mb-6">
-              🚀 <span className="text-svara-orange">Version 2.0.0</span> - Complete Platform Migration
+              🚀 <span className="text-svara-orange">Version 1.0.0</span> - Complete Platform Migration
             </h3>
             <div className="text-gray-300 text-lg leading-relaxed space-y-4">
               <p>

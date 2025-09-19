@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 px-6">
+    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-6">
       <div className="container mx-auto text-center">
         <div className="animate-float">
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6">

@@ -29,17 +29,6 @@ const Footer = () => {
               Modern YouTube Music Player with beautiful, responsive interface. 
               Transform your music streaming experience with SVARA's powerful features and elegant design.
             </p>
-            <div className="flex space-x-4 mt-6">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-svara-orange hover:scale-110 hover:rotate-12 transition-all duration-300">
-                <span className="text-white">📧</span>
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-svara-orange hover:scale-110 hover:-rotate-12 transition-all duration-300">
-                <span className="text-white">🐙</span>
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-svara-orange hover:scale-110 hover:rotate-12 transition-all duration-300">
-                <span className="text-white">🐦</span>
-              </a>
-            </div>
           </div>
 
           <div>
@@ -55,10 +44,9 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold text-lg mb-6">Support</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-svara-orange transition-colors duration-300">Documentation</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-svara-orange transition-colors duration-300">Help Center</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-svara-orange transition-colors duration-300">Report Bug</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-svara-orange transition-colors duration-300">Contact Us</a></li>
+              <li><Link to="/documentation" className="text-gray-300 hover:text-svara-orange transition-colors duration-300">Documentation</Link></li>
+              <li><a href="https://github.com/Swapnanilb/Svara/discussions" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-svara-orange transition-colors duration-300">Help Center</a></li>
+              <li><a href="https://github.com/Swapnanilb/Svara/issues" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-svara-orange transition-colors duration-300">Report Bug</a></li>
             </ul>
           </div>
         </div>
@@ -69,9 +57,9 @@ const Footer = () => {
               <p>&copy; 2025 SVARA Music Player. All rights reserved.</p>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-svara-orange transition-colors duration-300">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-svara-orange transition-colors duration-300">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-svara-orange transition-colors duration-300">MIT License</a>
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-svara-orange transition-colors duration-300">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="text-gray-400 hover:text-svara-orange transition-colors duration-300">Terms of Service</Link>
+              <Link to="/mit-license" className="text-gray-400 hover:text-svara-orange transition-colors duration-300">MIT License</Link>
             </div>
           </div>
         </div>

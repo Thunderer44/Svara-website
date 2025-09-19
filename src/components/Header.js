@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ onSidebarToggle }) => {
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -31,10 +31,18 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3 animate-float hover:scale-105 transition-transform duration-300" onClick={() => window.scrollTo(0, 0)}>
-            <img src={`${process.env.PUBLIC_URL}/svara_logo.png`} alt="SVARA Logo" className="w-10 h-10 animate-logo-glow" />
-            <span className="text-white text-2xl font-bold">SVARA</span>
-          </Link>
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={onSidebarToggle}
+              className="p-2 rounded-lg hover:bg-white/10 transition-all duration-300"
+            >
+              <span className="text-svara-orange text-lg">☰</span>
+            </button>
+            <Link to="/" className="flex items-center space-x-3 animate-float hover:scale-105 transition-transform duration-300" onClick={() => window.scrollTo(0, 0)}>
+              <img src={`${process.env.PUBLIC_URL}/svara_logo.png`} alt="SVARA Logo" className="w-10 h-10 animate-logo-glow" />
+              <span className="text-white text-2xl font-bold">SVARA</span>
+            </Link>
+          </div>
           
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-white hover:text-svara-orange transition-colors duration-300" onClick={(e) => {e.preventDefault(); handleNavClick('features');}}>Features</a>

@@ -1,13 +1,22 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const FeaturesPage = () => {
   const [headerRef, headerVisible] = useScrollAnimation();
   const [contentRef, contentVisible] = useScrollAnimation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleDownloadClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
 
   const featureCategories = [
     {
@@ -163,9 +172,9 @@ const FeaturesPage = () => {
               <p className="text-gray-300 text-lg mb-6">
                 Download SVARA Music Player today and transform your YouTube music streaming experience!
               </p>
-              <a href="#download" className="orange-gradient px-8 py-4 rounded-full text-white font-bold text-lg hover:scale-110 transition-all duration-300 inline-block">
+              <button onClick={handleDownloadClick} className="orange-gradient px-8 py-4 rounded-full text-white font-bold text-lg hover:scale-110 transition-all duration-300">
                 Download Now
-              </a>
+              </button>
             </div>
           </div>
         </div>

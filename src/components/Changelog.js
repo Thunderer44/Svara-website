@@ -11,8 +11,8 @@ const Changelog = () => {
 
   const versions = [
     {
-      version: "2.0.0",
-      date: "2024-12-19",
+      version: "1.0.0",
+      date: "2025-09-20",
       type: "major",
       sections: [
         {
@@ -59,8 +59,8 @@ const Changelog = () => {
       ]
     },
     {
-      version: "1.0.0",
-      date: "2024-11-15",
+      version: "0.0.1",
+      date: "2025-08-24",
       type: "major",
       sections: [
         {
@@ -89,6 +89,10 @@ const Changelog = () => {
     }
   };
 
+  const handleVersionClick = (version) => {
+    window.open(`https://github.com/Swapnanilb/Svara/releases/tag/v${version}`, '_blank');
+  };
+
   return (
     <div className="min-h-screen gradient-bg">
       <div className="pt-24 pb-20 px-6">
@@ -111,7 +115,11 @@ const Changelog = () => {
               >
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-4">
-                    <span className={`px-4 py-2 rounded-full font-bold ${getVersionColor(version.type)}`}>
+                    <span 
+                      className={`px-4 py-2 rounded-full font-bold cursor-pointer hover:scale-105 transition-transform duration-200 ${getVersionColor(version.type)}`}
+                      onClick={() => handleVersionClick(version.version)}
+                      title="View release on GitHub"
+                    >
                       v{version.version}
                     </span>
                     <span className="text-gray-400">{version.date}</span>
