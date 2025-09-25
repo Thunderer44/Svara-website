@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Svara-website/static/css/main.55c993de.css",
-    "main.js": "/Svara-website/static/js/main.49f13795.js",
+    "main.js": "/Svara-website/static/js/main.5970020d.js",
     "index.html": "/Svara-website/index.html",
     "main.55c993de.css.map": "/Svara-website/static/css/main.55c993de.css.map",
-    "main.49f13795.js.map": "/Svara-website/static/js/main.49f13795.js.map"
+    "main.5970020d.js.map": "/Svara-website/static/js/main.5970020d.js.map"
   },
   "entrypoints": [
     "static/css/main.55c993de.css",
-    "static/js/main.49f13795.js"
+    "static/js/main.5970020d.js"
   ]
 }
