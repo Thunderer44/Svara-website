@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Download = () => {
 
   const handleDownload = () => {
-    window.open('https://github.com/Swapnanilb/Svara/releases/tag/v1.0.0', '_blank');
+    window.open('https://github.com/Swapnanilb/Svara/releases/tag/v1.5.0', '_blank');
   };
 
   return (
@@ -24,10 +24,10 @@ const Download = () => {
             <div className="mb-8">
               <div className="text-6xl mb-6 animate-bounce-slow">🎵</div>
               <h3 className="text-3xl font-bold text-white mb-4">
-                SVARA Music Player <span className="text-svara-orange">v1.0.0</span>
+                SVARA Music Player <span className="text-svara-orange">v1.5.0</span>
               </h3>
               <p className="text-gray-300 text-lg mb-8">
-                Complete platform migration with modern React frontend, FastAPI backend, and enhanced features
+                Real-time progress tracking with WebSocket integration, enhanced UI/UX, and improved performance
               </p>
             </div>
 
